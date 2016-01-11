@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D609961F1B8B70BD009C104D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D609961E1B8B70BD009C104D /* DetailVC.swift */; };
 		D63AF0561B8B5719009EDB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AF0551B8B5719009EDB7D /* AppDelegate.swift */; };
 		D63AF0581B8B5719009EDB7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63AF0571B8B5719009EDB7D /* ViewController.swift */; };
 		D63AF05B1B8B5719009EDB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63AF0591B8B5719009EDB7D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D609961E1B8B70BD009C104D /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		D63AF0521B8B5719009EDB7D /* fav-place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fav-place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63AF0551B8B5719009EDB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D63AF0571B8B5719009EDB7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				D63AF05C1B8B5719009EDB7D /* Assets.xcassets */,
 				D63AF05E1B8B5719009EDB7D /* LaunchScreen.storyboard */,
 				D63AF0611B8B5719009EDB7D /* Info.plist */,
+				D609961E1B8B70BD009C104D /* DetailVC.swift */,
 			);
 			path = "fav-place";
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D63AF0511B8B5719009EDB7D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = KT6Z4T9C63;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			files = (
 				D63AF0581B8B5719009EDB7D /* ViewController.swift in Sources */,
 				D63AF0561B8B5719009EDB7D /* AppDelegate.swift in Sources */,
+				D609961F1B8B70BD009C104D /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +253,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "fav-place/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.fav-place";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gizmu.fav-place";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -259,10 +267,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "fav-place/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.devslopes.fav-place";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gizmu.fav-place";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -285,6 +296,7 @@
 				D63AF0661B8B5719009EDB7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
